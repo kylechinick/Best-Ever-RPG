@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', serif;
+  color: var(--dark-color-1);
+}
+
+:root {
+  --dark-color-1: rgb(32, 30, 24);
+  --light-color-1: rgb(255, 252, 245);
+  --light-color-2: rgb(255, 240, 202);
+  --light-color-2: rgb(236, 211, 147);
+}
+
+body {
+  padding: 1rem;
+  background-color: rgb(255, 240, 202);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1.4rem;
+  font-family: 'Germania One', cursive;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+.character-thumbnail {
+  width: 160px;
+  padding: 0.5rem;
+  border: 1px solid var(--dark-color-1);
+  border-radius: 6px;
+}
+
+.player-stats-title {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: var(--light-color-1);
+  font-weight: 700;
+}
+
+.player-stats-output {
+  font-weight: 400;
+}
