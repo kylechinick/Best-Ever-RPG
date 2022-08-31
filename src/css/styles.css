@@ -10,7 +10,8 @@
   --dark-color-1: rgb(32, 30, 24);
   --light-color-1: rgb(255, 252, 245);
   --light-color-2: rgb(255, 240, 202);
-  --light-color-2: rgb(236, 211, 147);
+  --light-color-3: rgb(236, 211, 147);
+  --border-treatment: 2px outset var(--light-color-2);
 }
 
 body {
@@ -22,25 +23,33 @@ h1,
 h2,
 h3,
 h4 {
-  margin-top: 1.4rem;
   font-family: 'Germania One', cursive;
 }
 
 button {
   margin-right: 0.5rem;
   padding: 0.5rem;
+  border: var(--border-treatment);
+  border-radius: 6px;
 }
 
+.container-margin-top {
+  margin-top: 1.4rem;
+}
+
+.container-margin-bottom {
+  margin-bottom: 1.4rem;
+}
 .character-thumbnail {
   width: 160px;
-  padding: 0.5rem;
-  border: 1px solid var(--dark-color-1);
+  border: var(--border-treatment);
   border-radius: 6px;
 }
 
 .player-stats-title {
   width: 50%;
   padding: 0.5rem;
+  border: var(--border-treatment);
   border-radius: 6px;
   background-color: var(--light-color-1);
   font-weight: 700;
